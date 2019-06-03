@@ -1,0 +1,80 @@
+<section class="facts-2-section">
+    <div class="header-2">
+        <h2><span class="header-2_accent">Supplement</span>Facts</h2>
+        <p>
+            Don’t forget to check these real success.
+        </p>
+    </div>
+    <div class="ingredients-tabs">
+        <div class="ingredients-tabs__controls-wrapper">
+            <div class="ingredients-tabs__controls-header">
+                <div class="_accent">Ingredients</div>
+                <div class="_units"><span class="_caption">Per serving</span><br>(mg)</div>
+            </div>
+            <ul class="ingredients-tabs__controls">
+            @foreach (Ingredient ingredient in ViewBag.Ingredients)
+            {
+                <li class="ingredients-tabs__button-wrapper">
+                    <button class="ingredients-tabs__button"> 
+                        <span class="ingredients-tabs__button-content">@ingredient.Name <span class="_units">@ingredient.Weight</span></span>
+                    </button>
+                </li>
+            }
+            </ul>
+            <a href="#" class="button" tabindex="0">download scpecs <span class="_size">(50kb)</span></a>
+        </div>
+        <div class="ingredients-tabs__tab-wrapper">
+        @foreach (Ingredient ingredient in ViewBag.Ingredients)
+        {
+            <div class="ingredients-tabs__tab">
+                <svg style="height: 115px;" viewBox="0 0 1 1">
+                    <image class="clip-svg" xlink:href="/assets/images/green-coffee-extract.jpg" height="1" width="1" />
+                </svg>
+                <div class="ingredients-tabs__description-header">
+                    <div class="_accent">
+                        @ingredient.Name
+                    </div>
+                    @ingredient.Weight mg
+                </div>
+                <p class="ingredients-tabs__description-text">
+                    Lorem ipsum dolor sit amet, consectetuer adipis cing elit, sed diam nonummy nibh euismod tincidu nt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.
+                </p>
+            </div>
+        }
+        </div>
+    </div>
+    @*<div class="ingredients">
+        <div class="ingredients__ingredients-container">
+            <div class="ingredients__ingredients-header">
+                <div class="_accent">Ingredients</div>
+                <div class="_units"><span class="_caption">Per serving</span><br>(mg)</div>
+            </div>
+            <ul class="ingredients__ingredients-list">
+            @foreach (Ingredient ingredient in ViewBag.Ingredients)
+            {
+                <li class="ingredients__ingredient"><button class="ingredients__ingredient-button">@ingredient.Name <span class="_units">@ingredient.Weight</span></button></li>
+            }
+            </ul>
+            <a href="#" class="button" tabindex="0">download scpecs <span class="_size">(50kb)</span></a>
+        </div>
+        <div class="ingredients__description-container">
+        @foreach (Ingredient ingredient in ViewBag.Ingredients)
+        {
+            <div class="ingredients__description">
+                <svg style="height: 115px;" viewBox="0 0 1 1">
+                    <image class="clip-svg" xlink:href="/assets/images/green-coffee-extract.jpg" height="1" width="1" />
+                </svg>
+                <div class="ingredients__description-header">
+                    <div class="_accent">
+                        @ingredient.Name
+                    </div>
+                    @ingredient.Weight mg
+                </div>
+                <p class="ingredients__description-text">
+                    Lorem ipsum dolor sit amet, consectetuer adipis cing elit, sed diam nonummy nibh euismod tincidu nt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.
+                </p>
+            </div>
+        }
+        </div>
+    </div>*@
+</section>

@@ -1,0 +1,180 @@
+.header-section {
+    @extend %container;
+    @extend %grid;
+
+    min-height: 800px;
+    grid-template-rows: min-content auto;
+    box-sizing: border-box;
+    padding-bottom: 60px;
+
+    @media (max-width: $mobile-width) {
+        min-height: 700px;
+        padding-bottom: 0;
+    }
+
+    //menu
+    &_menu {
+        grid-column: span 12;
+        display: flex;
+        align-items: center;
+        height: 120px;
+        border-bottom: 1px solid #ebebeb;
+
+        @media (max-width: $laptop-width) {
+            height: 80px;
+        }
+
+        @media (max-width: $mobile-width) {
+            height: initial;
+        }
+    }
+
+    &_logo {
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 70px;
+
+            @media (max-width: $mobile-width) {
+                display: none;
+            }
+        }
+
+        span {
+            color: #656973;
+            font-size: 15px;
+            // font-family: $raleway-font-family;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 900;
+            margin: 15px;
+        }
+    }
+
+    .hamburger {
+        margin-left: auto;
+    }
+
+    //call to action
+    &_call-to-action {
+        grid-column: span 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 100px;
+        position: relative;
+
+        @media (max-width: $laptop-width) { 
+            grid-column: span 12;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 0;
+        }
+    }
+
+    &_header {
+        @extend %header-preline;
+        
+        font-size: 1.5rem;
+        font-family: $raleway-font-family;
+        font-weight: 800;
+        line-height: 1em;
+        color: $dark-color;
+        padding-left: 35px;
+        margin: 35px 0;
+
+        @media (max-width: $mobile-width) {
+            font-size: 1.2rem;
+            padding: 0 8px;
+            text-align: center;
+        }
+
+        .accent {
+            font-size: 4.5rem;
+            font-weight: 900;
+            line-height: 1em;
+            display: block;
+            text-transform: uppercase;
+            padding-bottom: 0.22em;
+            margin-top: -0.14em;
+
+            @media (max-width: $tablet-width) {
+                font-size: 3.75rem;
+            }
+
+            @media (max-width: $mobile-width) {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    &_text {
+        margin: 35px 0;
+        max-width: 430px;
+
+        @media (max-width: $tablet-width) {
+            text-align: center;
+        }
+    }
+
+    &_buttons {
+        display: flex;
+        align-items: center;
+        
+        @media (max-width: $mobile-width) {
+            flex-direction: column;
+        }
+    }
+
+    &_video-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $dark-color;
+        font-weight: 700;
+        margin: 25px;
+        display: flex;
+        align-items: center;
+
+        .fa {
+            margin-left: 10px;
+            color: $accent-color;
+            font-size: #{(20 / 16)}rem;
+        }
+    }
+
+    //showcase
+    &_showcase {
+        grid-column: span 7;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        @media (max-width: $laptop-width) {
+            display: none;
+        }
+    }
+
+    &_bottles-wrapper {
+        object-fit: contain;
+        margin-top: 35px;
+        position: relative;
+
+        img {
+            width: 100%;
+            position: relative;
+        }
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 192px;
+            width: 100vw;
+            top: 50%;
+            left: -25px;
+            transform: translateY(-50%);
+            background: linear-gradient(to right, $base-bg-color , transparent 200px, transparent),
+                        url("/assets/images/pattern.png");
+        }
+    }
+}

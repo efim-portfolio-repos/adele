@@ -1,0 +1,51 @@
+//Lato
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Light'), local('Lato-Light'), url('/assets/fonts/lato/latolight.woff2') format('woff2'), url('/assets/fonts/lato/latolight.woff') format('woff'), url('/assets/fonts/lato/latolight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Light Italic'), local('Lato-LightItalic'), url('/assets/fonts/lato/latolightitalic.woff2') format('woff2'), url('/assets/fonts/lato/latolightitalic.woff') format('woff'), url('/assets/fonts/lato/latolightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Bold'), local('Lato-Bold'), url('/assets/fonts/lato/latobold.woff2') format('woff2'), url('/assets/fonts/lato/latobold.woff') format('woff'), url('/assets/fonts/lato/latobold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Black'), local('Lato-Black'), url('/assets/fonts/lato/latoblack.woff2') format('woff2'), url('/assets/fonts/lato/latoblack.woff') format('woff'), url('/assets/fonts/lato/latoblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+//Raleway
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway Light'), local('Raleway-Light'), url('/assets/fonts/raleway/ralewaylight.woff2') format('woff2'), url('/assets/fonts/raleway/ralewaylight.woff') format('woff'), url('/assets/fonts/raleway/ralewaylight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway Bold'), local('Raleway-Bold'), url('/assets/fonts/raleway/ralewaybold.woff2') format('woff2'), url('/assets/fonts/raleway/ralewaybold.woff') format('woff'), url('/assets/fonts/raleway/ralewaybold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'), url('/assets/fonts/raleway/ralewayextrabold.woff2') format('woff2'), url('/assets/fonts/raleway/ralewayextrabold.woff') format('woff'), url('/assets/fonts/raleway/ralewayextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway Black'), local('Raleway-Black'), url('/assets/fonts/raleway/ralewayblack.woff2') format('woff2'), url('/assets/fonts/raleway/ralewayblack.woff') format('woff'), url('/assets/fonts/raleway/ralewayblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

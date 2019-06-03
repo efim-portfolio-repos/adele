@@ -1,0 +1,22 @@
+//Reset
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+@import "Shared/scss/variables";
+@import "Shared/scss/templates";
+
+@import "Shared/scss/fonts";
+@import "Shared/css/font-awesome";
+@import "Shared/scss/hamburgers/hamburgers";
+@import "node_modules/@glidejs/glide/dist/css/glide.core";
+
+@import "Shared/scss/base";
+
+@import "Home/home";

@@ -1,0 +1,52 @@
+﻿@{
+    Layout = "_Layout";
+    ViewBag.Title = "Adele";
+    ViewBag.Description = "Adele";
+
+    ViewBag.IsDevelopment = Context.Settings.ContainsKey("environment") && Context.Settings["environment"].ToString() == "Development";
+    ViewBag.IsProduction = !ViewBag.IsDevelopment;
+
+    ViewBag.Ingredients = new Ingredient[] 
+    {
+        new Ingredient
+        {
+            Name = "Citrus Aurantium",
+            Weight = 100
+        },
+        new Ingredient
+        {
+            Name = "Green Coffee Extract",
+            Weight = 72
+        },
+        new Ingredient
+        {
+            Name = "Green Tea Extract",
+            Weight = 88
+        },
+        new Ingredient
+        {
+            Name = "Guarana Extract w/ 10% Caffeine",
+            Weight = 5            
+        },
+        new Ingredient
+        {
+            Name = "L-Phenylalanine",
+            Weight = 67
+        },
+        new Ingredient
+        {
+            Name = "Niacin",
+            Weight = 87
+        },
+        new Ingredient
+        {
+            Name = "Red Pepper Extract",
+            Weight = 323
+        },
+        new Ingredient
+        {
+            Name = "Vitamin B6",
+            Weight = 8
+        },
+    };
+}

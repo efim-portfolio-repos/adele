@@ -1,0 +1,59 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "watch:wyam",
+            "type": "shell",
+            "command": "wyam",
+            "args": [
+                "build",
+                "-w",
+                "-p",
+                "--setting",
+                "environment=Development"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "publish:wyam",
+            "type": "shell",
+            "command": "wyam",
+            "args": [
+                "build",
+                "--setting",
+                "environment=Production"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "build:webpack",
+            "type": "shell",
+            "command": "webpack",
+            "args": [
+                "--env.mode=development"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "watch:webpack",
+            "type": "shell",
+            "command": "webpack",
+            "args": [
+                "--watch",
+                "--env.mode=development"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "publish:webpack",
+            "type": "shell",
+            "command": "webpack",
+            "args": [
+                "--env.mode=production"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

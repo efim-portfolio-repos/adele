@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @if (ViewBag.IsDevelopment)
+    {
+    <link rel="stylesheet" href="/assets/css/main.css">
+    } 
+    else
+    {
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+    }
+</head>
+<body>
+    <div id="mobile-menu"></div>
+    <div id="page">
+        @RenderBody()
+    </div>
+    @if (ViewBag.IsDevelopment)
+    {
+    <script src="/assets/js/main.js"></script>
+    }
+    else
+    {
+    <script src="/assets/js/main.min.js"></script>
+    }
+</body>
+</html>

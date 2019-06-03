@@ -1,0 +1,57 @@
+body {
+	font-size: 16px;
+	font-family: $lato-font-family;
+	font-weight: 300;
+	color: $base-font-color;
+}
+
+#page {
+	background-color: $base-bg-color;
+	overflow: hidden;
+}
+
+.button {
+	display: inline-block;
+	padding: 15px 38px;
+	font-size: 1rem;
+	font-family: $lato-font-family;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: none;
+	border-radius: 25px;
+	background-color: $accent-color;
+	cursor: pointer;
+}
+
+.header-2 {
+    text-align: center;
+    
+	h2 {
+		text-transform: uppercase;
+		font-size: 1.875rem;
+		font-family: $raleway-font-family;
+		color: $dark-color;
+        font-weight: 300;
+        
+        @media (max-width: $mobile-width) {
+            font-size: 1.5rem;
+        }
+	}
+
+	&_accent {
+		margin-right: 32px;
+		position: relative;
+		font-weight: 800;
+	}
+
+	&_accent::before {
+		content: "";
+		position: absolute;
+		top: -0.1em;
+		right: -16px;
+		height: 1.33em;
+		border-left: 1px solid $accent-color;
+	}
+}

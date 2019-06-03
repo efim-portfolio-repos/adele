@@ -1,0 +1,70 @@
+.subscribe-section {
+	padding-top: 90px;
+	padding-bottom: 120px;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.92)),
+		url("/assets/images/subscribe-bg.jpg") 0 12% / cover no-repeat;
+
+	.header-2 {
+		color: $white-color;
+
+		h2 {
+			color: $white-color;
+		}
+
+		&_accent {
+			color: $white-color;
+        }
+        
+        p {
+            margin: 16px;
+        }
+    }
+    
+    &__container {
+        // @extend %container;
+        // @extend %grid;
+        margin: 0 auto;
+        max-width: 585px;
+        box-sizing: border-box;
+        padding: 0 15px;
+    }
+
+    &__form {
+        // grid-column: 4 / span 6;
+
+        margin-top: 60px;
+        display: flex;
+
+        input {
+            display: block;
+            padding: 16px 28px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            min-width: 100px;
+            border-radius: 25px 0 0 25px;
+            border: none;
+            font-family: $lato-font-family;
+            font-weight: 300;
+            font-size: 1rem;
+            color: $base-font-color;
+
+            &::placeholder {
+                color: #ababab;
+            }
+        }
+
+        input[type="submit"] {
+            border: none;
+            background: $accent-color;
+            font-size: 1rem;
+            font-family: $lato-font-family;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 0 25px 25px 0;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}

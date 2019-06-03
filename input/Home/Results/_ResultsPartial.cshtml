@@ -1,0 +1,50 @@
+<section class="results-section">
+    <div class="header-2">
+        <h2><span class="header-2_accent">Real man</span>Real results</h2>
+        <p>
+            Don’t forget to check these real success.
+        </p>
+    </div>
+    <div class="results-section_container">
+        <div class="results-section_glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    @for (int i = 0; i < 3; i++)
+                    {
+                    <li class="glide__slide">
+                        <img class="img-before" src="/assets/images/man-before.jpg" alt="man before">
+                        <img class="img-after" src="/assets/images/man-after.jpg" alt="man after">
+                        <div class="result-description">
+                            <div class="result-description_weight">
+                                <div class="result-description_value">
+                                    <span class="result-description_number">87</span> kg
+                                </div>
+                                <div class="result-description_caption">
+                                    Before
+                                </div>                            
+                            </div>
+                            <div class="result-description_weight">
+                                <div class="result-description_value">
+                                    <span class="result-description_number">63</span> kg
+                                </div>
+                                <div class="result-description_caption">
+                                    After
+                                </div>                            
+                            </div>
+                            <div class="result-description_persons-info">
+                                <div class="result-description_name">Mike Anderson</div>
+                                <div class="result-description_age">Age: 28</div>
+                            </div>
+                        </div>
+                    </li>
+                    }
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"></button>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]"></div>
+        </div>
+    </div>
+</section>

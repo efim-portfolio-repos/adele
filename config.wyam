@@ -1,0 +1,22 @@
+#n Wyam.Razor
+
+public class Ingredient 
+{
+	public string Name {get; set;}
+	public int Weight {get; set;}
+}
+
+if(!Settings.ContainsKey("environment")) 
+{
+	Settings["env"] = "Production";
+}
+
+Pipelines.Add("Home",
+	ReadFiles("**/{!_,}*.cshtml"),
+	Razor(),
+	WriteFiles(".html")
+);
+
+Pipelines.Add("Resources",
+	CopyFiles("assets/**/*")
+);

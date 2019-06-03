@@ -1,0 +1,46 @@
+.certifications-section {
+    background-color: $gray-color;
+    padding-top: 80px;
+    padding-bottom: 75px;
+
+    &__header {
+        text-align: center;
+
+        h2 {
+            text-transform: uppercase;
+            font-weight: 800;
+            color: $dark-color;
+        }
+    }
+
+    &__sertificates {
+        @extend %container;
+        @extend %grid;
+
+        margin-top: 35px;
+    }
+
+    &__logo-wrapper {
+        grid-column: span 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: $tablet-width) {
+            grid-column: 1 / -1;
+        }
+
+        img {
+            max-width: 100%;
+            margin: 15px 0;
+        }
+
+        &:first-child {
+            grid-column: 2 / span 2;
+
+            @media (max-width: $tablet-width) {
+                grid-column: 1 / -1;
+            }
+        }
+    }
+}

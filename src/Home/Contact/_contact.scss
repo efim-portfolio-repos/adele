@@ -1,0 +1,79 @@
+.contact-section {
+    padding-top: 115px;
+    padding-bottom: 80px;
+}
+
+%issue-form__input {
+    display: block;
+    min-width: 100px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ebebeb;
+    margin: 10px 0;
+    padding: 15px 0;
+    color: $base-font-color;
+    font-family: $lato-font-family;
+    font-weight: 300;
+    font-size: 1rem;
+
+    &:focus {
+        outline: none;
+        border-bottom: 1px solid #777;
+    }
+
+    &::placeholder {
+        color: #c1c1c1;
+    }
+}
+
+.issue-form {
+    max-width: 585px;
+    margin: 0 auto;
+    margin-top: 70px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    
+    &__name {
+        @extend %issue-form__input;
+
+        @media (max-width: $mobile-width) {
+            grid-column: span 2;
+        }
+    }
+
+    &__email {
+        @extend %issue-form__input;
+
+        @media (max-width: $mobile-width) {
+            grid-column: span 2;
+        }
+    }
+
+    &__subject {
+        @extend %issue-form__input;
+
+        grid-column: span 2;
+    }
+
+    &__subject {
+        @extend %issue-form__input;
+    }
+
+    &__issue-text {
+        @extend %issue-form__input;
+
+        grid-column: span 2;
+        height: 90px;
+        resize: none;
+    }
+
+    .button {
+        grid-column: span 2;
+        justify-self: center;
+        width: 225px;
+        margin: 40px 0;
+    }
+}
